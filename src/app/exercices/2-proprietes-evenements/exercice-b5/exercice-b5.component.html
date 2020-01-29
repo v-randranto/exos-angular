@@ -1,0 +1,23 @@
+<h2>exercice-b5</h2>
+<h3 title="Titre quelconque" #refH3>les références de template</h3>
+<div>
+    <p>
+        Avec les références de template on obtient une référence à l'élément HTML qui porte la référence, on peut donc
+        accéder à toutes les propriétés de cet élément HTML.
+    </p>
+    <!-- <code>&lt;input type&#61;"text" name&#61;"nom" #inputElementRef&gt;
+{{ inputElementRef-name }} &lt;!-- Affichera "nom" qui est la valeur de l'attribut (propriété DOM) "name" --&gt;</code> -->
+    <p>
+        Note: Le nom de la référence utilisée dans le template doit être unique poour ne pas entrer en conflit avec
+        d'autres références de template.
+    </p>
+    <p>>
+        Nous verrons dans d'autres exercices que les références de template peuvent aussi pointer vers des directives
+        qui fournissent un contenu différent de l'élément HTML.
+    </p>
+</div>
+<div>
+    <h4>Exo</h4>
+    <p>le contenu de l'attribut 'title' de h3 : {{refH3.title}}</p>
+    <p>le contenu texte de h3 : {{refH3.innerHTML}} </p>
+</div>

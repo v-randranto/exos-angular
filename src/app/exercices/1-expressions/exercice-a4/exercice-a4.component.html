@@ -1,0 +1,20 @@
+<h2>exercice-a4</h2>
+<div>
+  <p>La directive `NgModel` permet d'afficher la valeur d'une propriété de la classe et de refléter automatiquement la
+    nouvelle valeur si l'utilisateur la modifie. De même la valeur sera mise à jour dans le template si elle est
+    modifiée dans la classe (par exemple via un setter ou un appel à une méthode de la classe).
+  </p>
+  <p>
+    La directive `NgModel` permet communément d'associer le contenu d'un champ de formulaire de type `input`, `select`
+    ou `textarea` à une propriété de classe et d'effectuer automatiquement la liaison de données dans les 2 sens.
+  </p>
+  <code>&#60;input type="password" name&#61;"my-password" [(ngModel)]&#61;"userPassword"&#62;</code>
+</div>
+<div>
+  <h4>Exo:</h4>
+  <form action="#">
+    <label for="nom">Nom : </label>
+    <input type="text" [(ngModel)]="nom" name="nom">
+  </form>
+  <p>nom : {{nom}}</p>
+</div>

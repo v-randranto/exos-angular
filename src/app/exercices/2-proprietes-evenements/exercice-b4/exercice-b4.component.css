@@ -1,0 +1,7 @@
+div {
+    margin: 10px;
+}
+
+.box:hover {
+    cursor: pointer;
+}

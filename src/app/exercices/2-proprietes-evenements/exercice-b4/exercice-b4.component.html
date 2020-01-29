@@ -1,0 +1,26 @@
+<h2>exercice-b4</h2>
+<div>
+    <p>
+        La directive `NgStyle` permet de manipuler plusieurs propriétés de style de façon dynamique, en fonction de
+        propriétés du composant.
+    </p>
+    <p>
+        On pourrait manipuler une propriété de style directement en utilisant la liaisons de propriété
+        <code> (`&lt;div
+            [style.color]&#61;"myColor"&gt;`) </code> comme pour toutes les propriétés des éléments HTML. Mais la
+        directive `NgStyle`
+        permet de manipuler un objet comportant plusieurs clé représentant chacune une propriété CSS.
+    </p>
+    <p>
+        La microsyntaxe `NgFor`<br>
+        La directive `NgFor` expose des propriétés, comme `index` (représentant l'indice de l'élément en cours dans la
+        boucle) qui peuvent être utilisées dans le template.
+    </p>
+    <!-- <code>&lt;div *ngFor&#61;"let item of items; let i&#61;index"&gt; &#123;&#123; i + 1&#125;&#125; - &#123;&#123;&#125;&#125;&lt;&#47;div&gt;
+    </code> -->
+    <div>
+        <div>
+            <h4>Exo: cliquer sur une box</h4>
+            <div class="box" *ngFor="let style of styles; let i = index" [ngStyle]="style" (click)="augLargeur(i)">
+            </div>
+        </div>

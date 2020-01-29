@@ -1,0 +1,16 @@
+<h2>exercice-a5</h2>
+<p>La directive `NgIf` permet de supprimer ou insérer un élément du DOM. La directive `NgIf` prend une expression qui sera évaluée à une valeur booléenne : si la valeur obtenue est `false` le noeud DOM est supprimé, si la valeur obtenue est `true` le noeud DOM est inséré à l'endroit ou la directive est utilisée.</p>
+<form action="#">
+  <select [(ngModel)]="couleur" name="couleur">
+    <option value="1">bleu</option>
+    <option value="2">blanc</option>
+    <option value="3">rouge</option>
+    <option value="4">bleu et blanc</option>
+    <option value="5">bleu et rouge</option>
+    <option value="6">rouge et blanc</option>
+    <option value="7">bleu, blan et rouge</option>
+  </select>
+</form>
+<div *ngIf="couleur == 1 || couleur == 4 || couleur == 5 || couleur == 7" class='bleu'></div>
+<div *ngIf="couleur == 2 || couleur == 4 || couleur == 6 || couleur == 7" class='blanc'></div>
+<div *ngIf="couleur == 3 || couleur == 5 || couleur == 6 || couleur == 7" class='rouge'></div>

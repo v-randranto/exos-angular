@@ -1,0 +1,34 @@
+<h2>exercice-c2</h2>
+<div>
+    <p>
+        Il existe 2 façons de gérer les formulaires dans Angular :<br><br>
+        - Les formulaires pilotés par le template](https://angular.io/guide/forms).
+        Les formulaires pilotés par le template sont utiles pour ajouter un formulaire simple à une application, tel
+        qu'un formulaire d'inscription à une liste de diffusion. Ils sont faciles à ajouter à une application, mais ils
+        ne sont pas aussi évolutifs que les formulaires réactifs. Si vous avez des exigences de base et une logique
+        pouvant être gérées uniquement dans le template, utilisez des formulaires pilotés par le template.<br><br>
+        - Les formulaires "réactifs"](https://angular.io/guide/reactive-forms). Les formulaires réactifs sont plus
+        robustes : ils sont plus évolutifs, réutilisables et testables. Si les formulaires constituent un élément clé de
+        votre application ou si vous utilisez déjà des modèles réactifs pour générer votre application, utilisez des
+        formulaires réactifs.
+        <br><br>
+        Dans cet exercice nous allons utiliser un formulaire piloté par le template pour découvrir l'utilisation des
+        formulaires dans Angular avec la directive `NgModel`.
+    </p>
+</div>
+<div>
+    <form #formRef="ngForm" action="#" method="post">
+        <p><label for="nom">Nom : </label>
+            <input #refNom="ngModel" type="text" name="nom" [(ngModel)]="nom" ></p>
+        <p><label for="prenom">Prénom : </label>
+            <input #refPrenom="ngModel" type="text" name="prenom" [(ngModel)]="prenom"></p>
+        <p><label for="email">Email : </label>
+            <input #refEmail="ngModel" type="email" name="email" [(ngModel)]="email"></p>
+        <p><label for="age">Age : </label>
+            <input refAge="ngModel" type="number" name="age" [(ngModel)]="age"></p>
+        <p><input type="submit" value="Valider"></p>
+        <p>Nom : {{nom}}<br>Prénom : {{prenom}} <br>Email : {{email}} <br> Age : {{age}}</p>
+
+    </form>
+
+</div>

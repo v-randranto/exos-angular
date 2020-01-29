@@ -1,0 +1,11 @@
+<h2>exercice-b1</h2>
+<p>Lorsqu'on veut affecter la valeur d'une propriété d'élément à partir d'une propriété du composant on utilise la syntaxe `[]`, par exemple pour la propriété `src` d'une image on écrira :</p>
+<code>&#60;img [src]&#61;"monImage"&#62;</code>
+
+<h4>partie 1</h4>
+<img [src]="chien" alt="chien" height=150>
+<!-- <img [src]="chats[0]" alt="chat0" width=300> -->
+<!-- <img [src]="chats[1]" alt="chat1" width=300> -->
+<!-- <img [src]="chats[2]" alt="chat2" width=300> -->
+<h4>partie 2</h4>
+<img *ngFor="let chat of chats" [src]="chat" alt="" height=150>
