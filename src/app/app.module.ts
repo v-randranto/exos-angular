@@ -22,6 +22,7 @@ import { ExerciceC2Component } from './exercices/3-formulaires/exercice-c2/exerc
 import { ExerciceD1Component } from './exercices/4-services/exercice-d1/exercice-d1.component';
 import { ExerciceD2Component } from './exercices/4-services/exercice-d2/exercice-d2.component';
 import { ExerciceE1Component } from './exercices/5-routage/exercice-e1/exercice-e1.component';
+import { ExerciceF1Component } from './exercices/6-modules/exercice-f1/exercice-f1.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { ExerciceE1Component } from './exercices/5-routage/exercice-e1/exercice-
     ExerciceD1Component,
     ExerciceD2Component,
     ExerciceE1Component,
+    ExerciceF1Component,
   ],
   imports: [
     BrowserModule,
