@@ -19,10 +19,14 @@ import { ExerciceB5Component } from './exercices/2-proprietes-evenements/exercic
 import { ExerciceB6Component } from './exercices/2-proprietes-evenements/exercice-b6/exercice-b6.component';
 import { ExerciceC1Component } from './exercices/3-formulaires/exercice-c1/exercice-c1.component';
 import { ExerciceC2Component } from './exercices/3-formulaires/exercice-c2/exercice-c2.component';
-import { ExerciceD1Component } from './exercices/4-services/exercice-d1/exercice-d1.component';
+import { TodoComponent } from './exercices/4-services/todo/todo.component';
+import { TodoListComponent } from './exercices/4-services/todo-list/todo-list.component';
+import { TodoFormComponent } from './exercices/4-services/todo-form/todo-form.component';
 import { ExerciceD2Component } from './exercices/4-services/exercice-d2/exercice-d2.component';
 import { ExerciceE1Component } from './exercices/5-routage/exercice-e1/exercice-e1.component';
 import { ExerciceF1Component } from './exercices/6-modules/exercice-f1/exercice-f1.component';
+import { ExerciceD1Component } from './exercices/4-services/exercice-d1/exercice-d1.component';
+
 
 @NgModule({
   declarations: [
@@ -42,10 +46,14 @@ import { ExerciceF1Component } from './exercices/6-modules/exercice-f1/exercice-
     ExerciceB6Component,
     ExerciceC1Component,
     ExerciceC2Component,
-    ExerciceD1Component,
+    TodoComponent,
+    TodoListComponent,
+    TodoFormComponent,
     ExerciceD2Component,
     ExerciceE1Component,
     ExerciceF1Component,
+    ExerciceD1Component,
+    
   ],
   imports: [
     BrowserModule,

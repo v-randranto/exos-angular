@@ -1,3 +1,4 @@
+import { CompteurService } from './../../../fonctions/compteur/compteur.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExerciceD1Component implements OnInit {
 
-  constructor() { }
+  compteur:number = 0;
+  incrementer(){}
+
+  constructor(private compteurService:CompteurService) { 
+    this.compteur = this.compteurService.getCompteur();
+    this.incrementer = this.compteurService.incrementer;
+  }
 
   ngOnInit() {
   }

@@ -31,7 +31,7 @@
 
     <p>La référence de template (cf. exercice-a4) créée sur un champ n'est pas une référence à l'élément HTML en
         question mais contient des propriétés concernant l'état du contrôleur, comme par exemple `valid`, `pristine` ou
-        `touched`. Ces propriétés permettent de vérifier l'état du champ en code. <br>
+        `touched`. Ces propriétés permettent de vérifier l'état du champ en code. <br><br>
         Observez, dans l'inspecteur du navigateur, les différentes classes associées à chaque champ lorsque vous
         modifiez leur valeur ou lorsque vous sortez du champ. Ces classes sont automatiquement ajoutées par Angular en
         fonction de l'état du champ (valide, invalide, modifé, etc.) et sont pratiques pour styler votre formulaire en
@@ -40,10 +40,10 @@
     <p>Nom : {{nom}}<br>Prénom : {{prenom}} <br>Email : {{email}} <br> Age : {{age}}</p>
     <p>
         La directive `ngForm` est automatiquement associée à chaque formulaire par Angular. Vous pouvez exploiter cette
-        directive en créant une référence de template sur l'élément `form`. <br>
-        <code>&lt;form #formRef&#61;"ngForm"&gt;</code><br>
+        directive en créant une référence de template sur l'élément `form`. <br><br>
+        <code>&lt;form #formRef&#61;"ngForm"&gt;</code><br><br>
         La référence créée n'est pas une référence à l'élément `form` mais contient des propriétés concernant l'état du
-        formulaire, comme par exemple `valid` ou `submitted`. <br>
+        formulaire, comme par exemple `valid` ou `submitted`. <br><br>
         Vous pouvez afficher l'ensemble les valeurs des champs de votre formulaire, en passant la propriété `value` de
         `ngForm` au filtre `json`.
     </p>
