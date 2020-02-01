@@ -19,8 +19,8 @@ div.exo {
   background-color: blanchedalmond;
   color: brown;
   padding: 0px 20px;
-  min-width: 500px;
-  /* max-height:550px; */
+  min-width: 35%;
+  max-width: 55%;
   overflow: auto;
 }
 

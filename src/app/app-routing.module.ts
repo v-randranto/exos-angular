@@ -19,7 +19,8 @@ import { ExerciceD1Component } from './exercices/4-services/exercice-d1/exercice
 import { TodoComponent } from './exercices/4-services/todo/todo.component';
 import { TodoListComponent } from './exercices/4-services/todo-list/todo-list.component';
 import { TodoFormComponent } from './exercices/4-services/todo-form/todo-form.component';
-
+import { ExerciceE1Component } from './exercices/5-routage/exercice-e1/exercice-e1.component';
+import { ExerciceF1Component } from './exercices/6-modules/exercice-f1/exercice-f1.component';
 
 const routes: Routes = [
   {path: 'expressions/exo-a0', component: ExerciceA0Component, data: { title: 'Expressions' }},
@@ -38,10 +39,12 @@ const routes: Routes = [
   {path: 'proprietes-evenements/exo-b6', component: ExerciceB6Component,data: { title: 'Proprietes et événements' }},
   {path: 'formulaires/exo-c1', component: ExerciceC1Component,data: { title: 'Formulaires' }},
   {path: 'formulaires/exo-c2', component: ExerciceC2Component,data: { title: 'Formulaires' }},
-  {path: 'services/exercice-d1', component: ExerciceD1Component,data: { title: 'Services' }},
+  {path: 'services/exo-d1', component: ExerciceD1Component,data: { title: 'Services' }},
   {path: 'services/todo', component: TodoComponent,data: { title: 'Tâches' }},
   {path: 'services/todo-list', component: TodoListComponent,data: { title: 'Tâches' }},
   {path: 'services/todo-form', component: TodoFormComponent,data: { title: 'Tâches' }},
+  {path: 'routage/exo-e1', component: ExerciceE1Component,data: { title: 'Routage' }},
+  {path: 'modules/exo-f1', component: ExerciceF1Component,data: { title: 'Modules' }},
 ];
 
 @NgModule({

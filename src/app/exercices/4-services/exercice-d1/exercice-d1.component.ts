@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./exercice-d1.component.css']
 })
 export class ExerciceD1Component implements OnInit {
-
+  titreH2:string = 'Exercice d1'
   compteur:number = 0;
   incrementer(){}
 

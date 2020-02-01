@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./exercice-a4.component.css']
 })
 export class ExerciceA4Component implements OnInit {
-
+  titreH2:string = 'Exercice a4'
   nom: string = 'valeur component';
 
   constructor() { }

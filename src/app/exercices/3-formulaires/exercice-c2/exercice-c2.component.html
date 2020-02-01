@@ -1,4 +1,4 @@
-<h2>exercice-c2</h2>
+<h2>{{titreH2}}</h2>
 <a href="assets/exercices/3-formulaires/exercice-c2.html" target="_blank">Enoncé</a>
 <div>
     <form #formRef="ngForm" action="#" method="post">
@@ -14,8 +14,8 @@
     </form>
 
     <p>Affichage des données saisies :</p>
-    <p>Nom : {{nom}}<br>Prénom : {{prenom}} <br>Email : {{email}} <br> Age : {{age}}</p>
+    <p>Nom : <i>{{nom}}</i><br>Prénom : <i>{{prenom}}</i> <br>Email : <i>{{email}}</i> <br> Age : <i>{{age}}</i></p>
     
-    <p>Affichage du contenu du formulaire {{ formRef.value | json }}</p>
+    <p>Affichage du contenu du formulaire : <i>{{formRef.value | json}}</i></p>
 
 </div>

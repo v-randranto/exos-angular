@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./exercice-c1.component.css']
 })
 export class ExerciceC1Component implements OnInit {
-
+  titreH2:string = 'Exercice c1'
   adresseDeLImage:string = '';
   saisieUtilisateur:string = '';
   

@@ -13,7 +13,7 @@ interface IBagnole {
   styleUrls: ['./exercice-a6.component.css']
 })
 export class ExerciceA6Component implements OnInit {
-
+  titreH2:string = 'Exercice a6'
   bagnoles: IBagnole[] = [
     {
       modele: 'super deudeuche',

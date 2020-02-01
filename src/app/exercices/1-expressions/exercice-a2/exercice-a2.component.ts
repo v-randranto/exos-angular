@@ -19,7 +19,7 @@ export class ExerciceA2Component implements OnInit {
 
   ngOnInit() {
   }
-
+  titreH2:string = 'Exercice a2'
   promotions: number[] = [2016, 2017, 2018, 2019, 2020];
 
   classe: IClasse = {

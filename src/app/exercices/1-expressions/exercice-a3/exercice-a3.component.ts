@@ -19,7 +19,7 @@ interface IClasse {
 })
 
 export class ExerciceA3Component implements OnInit {
-
+  titreH2:string = 'Exercice a3'
   classe: IClasse = {
     nom: "DIWJS-11",
     specialite: "JavaScipt",
