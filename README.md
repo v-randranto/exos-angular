@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
 
+## Issues
+Run into a problem with exercice-d2 (Todo app) : at first use of the Todo service (that is displaying the tasks list), its methods work all right but when submitting the form, they wouldn't work as the tasks table is undefined. The table is initialised in the class component with 2 tasks :(.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
