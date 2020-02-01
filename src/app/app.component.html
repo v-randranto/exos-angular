@@ -1,42 +1,10 @@
 <h1>{{titre}}</h1>
 <p>Bonjour {{prenom}}!</p>
-<p>Bienvenue dans les séries d'exos Angular</p>
-<h2>Angular CLI</h2>
-<app-exercice-a0></app-exercice-a0>
-<h2>Expressions</h2>
-<app-exercice-a1></app-exercice-a1>
-<hr>
-<app-exercice-a2></app-exercice-a2>
-<hr>
-<app-exercice-a3></app-exercice-a3>
-<hr>
-<app-exercice-a4></app-exercice-a4>
-<hr>
-<app-exercice-a5></app-exercice-a5>
-<hr>
-<app-exercice-a6></app-exercice-a6>
-<h2>Propriétés - Evénements</h2> 
-<app-exercice-b1></app-exercice-b1>
-<hr>
-<app-exercice-b2></app-exercice-b2>
-<hr>
-<app-exercice-b3></app-exercice-b3>
-<hr>
-<app-exercice-b4></app-exercice-b4>
-<hr>
-<app-exercice-b5></app-exercice-b5>
-<hr>
-<app-exercice-b6></app-exercice-b6>
-<h2>Formulaires</h2> 
-<app-exercice-c1></app-exercice-c1>
-<hr>
-<app-exercice-c2></app-exercice-c2>
-<h2>Services</h2>
-<app-exercice-d1></app-exercice-d1>
-<hr>
-<app-todo></app-todo>
-<h2>Routage</h2> 
-<app-exercice-e1></app-exercice-e1>
-<h2>Modules</h2> 
-<app-exercice-f1></app-exercice-f1>
-
+<div class="container">
+    <div class="menu">
+        <app-menu></app-menu>
+    </div>
+    <div class="exo">
+        <router-outlet></router-outlet>
+    </div>
+</div>

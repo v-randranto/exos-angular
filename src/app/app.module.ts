@@ -22,10 +22,8 @@ import { ExerciceC2Component } from './exercices/3-formulaires/exercice-c2/exerc
 import { TodoComponent } from './exercices/4-services/todo/todo.component';
 import { TodoListComponent } from './exercices/4-services/todo-list/todo-list.component';
 import { TodoFormComponent } from './exercices/4-services/todo-form/todo-form.component';
-import { ExerciceD2Component } from './exercices/4-services/exercice-d2/exercice-d2.component';
-import { ExerciceE1Component } from './exercices/5-routage/exercice-e1/exercice-e1.component';
-import { ExerciceF1Component } from './exercices/6-modules/exercice-f1/exercice-f1.component';
 import { ExerciceD1Component } from './exercices/4-services/exercice-d1/exercice-d1.component';
+import { MenuComponent } from './exercices/5-routage/menu/menu.component';
 
 
 @NgModule({
@@ -46,13 +44,11 @@ import { ExerciceD1Component } from './exercices/4-services/exercice-d1/exercice
     ExerciceB6Component,
     ExerciceC1Component,
     ExerciceC2Component,
+    ExerciceD1Component,
     TodoComponent,
     TodoListComponent,
     TodoFormComponent,
-    ExerciceD2Component,
-    ExerciceE1Component,
-    ExerciceF1Component,
-    ExerciceD1Component,
+    MenuComponent,   
     
   ],
   imports: [
