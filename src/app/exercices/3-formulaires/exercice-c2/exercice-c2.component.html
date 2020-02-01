@@ -1,21 +1,5 @@
 <h2>exercice-c2</h2>
-<div>
-    <p>
-        Il existe 2 façons de gérer les formulaires dans Angular :<br><br>
-        - Les formulaires pilotés par le template](https://angular.io/guide/forms).
-        Les formulaires pilotés par le template sont utiles pour ajouter un formulaire simple à une application, tel
-        qu'un formulaire d'inscription à une liste de diffusion. Ils sont faciles à ajouter à une application, mais ils
-        ne sont pas aussi évolutifs que les formulaires réactifs. Si vous avez des exigences de base et une logique
-        pouvant être gérées uniquement dans le template, utilisez des formulaires pilotés par le template.<br><br>
-        - Les formulaires "réactifs"](https://angular.io/guide/reactive-forms). Les formulaires réactifs sont plus
-        robustes : ils sont plus évolutifs, réutilisables et testables. Si les formulaires constituent un élément clé de
-        votre application ou si vous utilisez déjà des modèles réactifs pour générer votre application, utilisez des
-        formulaires réactifs.
-        <br><br>
-        Dans cet exercice nous allons utiliser un formulaire piloté par le template pour découvrir l'utilisation des
-        formulaires dans Angular avec la directive `NgModel`.
-    </p>
-</div>
+<a href="assets/exercices/3-formulaires/exercice-c2.html" target="_blank">Enoncé</a>
 <div>
     <form #formRef="ngForm" action="#" method="post">
         <p><label for="nom">Nom : </label>
@@ -29,24 +13,9 @@
         <p><input type="submit" value="Valider"></p>
     </form>
 
-    <p>La référence de template (cf. exercice-a4) créée sur un champ n'est pas une référence à l'élément HTML en
-        question mais contient des propriétés concernant l'état du contrôleur, comme par exemple `valid`, `pristine` ou
-        `touched`. Ces propriétés permettent de vérifier l'état du champ en code. <br><br>
-        Observez, dans l'inspecteur du navigateur, les différentes classes associées à chaque champ lorsque vous
-        modifiez leur valeur ou lorsque vous sortez du champ. Ces classes sont automatiquement ajoutées par Angular en
-        fonction de l'état du champ (valide, invalide, modifé, etc.) et sont pratiques pour styler votre formulaire en
-        fonction de son état .</p>
     <p>Affichage des données saisies :</p>
     <p>Nom : {{nom}}<br>Prénom : {{prenom}} <br>Email : {{email}} <br> Age : {{age}}</p>
-    <p>
-        La directive `ngForm` est automatiquement associée à chaque formulaire par Angular. Vous pouvez exploiter cette
-        directive en créant une référence de template sur l'élément `form`. <br><br>
-        <code>&lt;form #formRef&#61;"ngForm"&gt;</code><br><br>
-        La référence créée n'est pas une référence à l'élément `form` mais contient des propriétés concernant l'état du
-        formulaire, comme par exemple `valid` ou `submitted`. <br><br>
-        Vous pouvez afficher l'ensemble les valeurs des champs de votre formulaire, en passant la propriété `value` de
-        `ngForm` au filtre `json`.
-    </p>
+    
     <p>Affichage du contenu du formulaire {{ formRef.value | json }}</p>
 
 </div>

@@ -1,32 +1,5 @@
 <h2>exercice-c1</h2>
-<div>
-    <p>
-        La directive `NgModel` fait partie de la gestion des formulaires dans Angular, pour l'utiliser nous devons importer le module `FormsModule` dans notre application.
-    </p>
-    <p>
-        Dans le module principal (défini dans le fichier `src/app/app.module.ts`) ajoutez le module `FormsModule` à la liste des imports.
-    </p>
-    <p>
-        Une fois le module `FormsModule` importé dans l'application, la directive `NgForm` est automatiquement active sur tous les formulaires. Cette directive a pour effet de bloquer le fonctionnement normal des formulaires : en
-        effet ils ne seront pas soumis à l'adresse indiquée dans l'attribut `action`, et la page ne sera pas rechargée. Cela nous donne l'opportunité de traiter le formulaire entièrement en JavaScript.
-    </p>
-    <p>
-        L'événement `ngSubmit` permet d'associer une expression Angular à l'événement `submit` des formulaires. Les actions utilisateurs qui ont pour conséquence de soumettre le formulaire (clic sur un bouton de type `submit`, ou appui sur la touche entrée dans un champ) exécuteront l'expression (qui peut être une méthode de la classe).
-    </p>
-    <p>
-        Exemple : <br>L'expression ci-dessous assigne une valeur à la propriété `resultat` quand l'événement JavaScript `submit` sera émis.
-    </p>
-
-    <p><code>&lt;form (ngSubmit)&#61;"resultat = texte"&gt;</code></p>
-
-    <p>
-        Exemple : <br>La méthode `traiterLeFormulaire()` du composant sera invoquée quand l'événement JavaScript `submit` sera émis.
-    </p>
-    <p>
-        <code>&lt;form (ngSubmit)&#61;"traiterLeFormulaire()"&gt;</code>
-
-    </p>
-</div>
+<a href="assets/exercices/3-formulaires/exercice-c1.html" target="_blank">Enoncé</a>
 <div>
     <h4>Exo: saisir l'adresse d'une image</h4>
     

@@ -1,36 +1,6 @@
 <h2>exercice-b2</h2>
-<div>
-    <p>Nous avons vu dans l'exercice précédant qu'il est possible d'affecter des valeurs utilisées dans le template à
-        partir de la classe du composant, c'est la laison de propriété.
-    </p>
-    <p>
-        Il existe un moyen de communniquer dans l'autre sens : du template vers la classe, ou de la vue vers le modèle.
-        Il s'agit de la liaison événementielle.
-    </p>
-    <p>
-        Angular nous fournit un moyen de gérer les actions de l'utilisateur, à travers les événements DOM que vous
-        connaissez déjà, comme `click`, `mouseover`, etc. ou bien comme nous le verrons plus tard avec des événements
-        custom.
-    </p>
-    <p>
-        Pour gérer un évément sur un élément de la vue, on indique le nom de l'événement **entre parenthèses* suivi du
-        nom d'une méthode de la classe.</p>
+<a href="assets/exercices/2-proprietes-evenements/exercice-b2.html" target="_blank">Enoncé</a>
 
-    <code>&lt;div (click)&#61;"faireQuelqueChose()">Action !&lt;&frasl;div&gt;</code>
-    <p>
-        Dans ce cas `faireQuelqueChose()` est une méthode qui doit exister dans la classe du composant.
-    </p>
-    <p>
-        La liaison événementielle (`(event)`) est unidirectionnelle, cette fois depuis la vue (template / HTML) vers le
-        modèle (classe).
-    </p>
-    <p>
-        Remarque : <br>
-        Nous avons déjà rencontré cette syntaxe (les parenthèses entourant le nom de l'événement) avec `NgModel`, qui
-        effectue une liaison automatique dans les 2 sens. C'est pour cette raison que `NgModel` combine les crochets
-        (liaison de propriété) et les parenthèses (liaison d'événement).
-    </p>
-</div>
 <div>
     <h4>Exo :</h4>
     <p>nombre : {{nombre}}</p>

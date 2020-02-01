@@ -1,13 +1,9 @@
 <h2>exercice-a3 </h2>
+<a href="assets/exercices/1-expressions/exercice-a2.html" target="_blank">Enoncé</a>
 <div>
-<p>La directive `NgFor` permet de répéter une branche de l'arborescence du DOM pour chaque élément d'une collection (tableau ou autre objet itérable).</p>
-<code>&#60;li *ngFor="let eleve of classe.eleves"&#62;</code>
+  <p>Liste des élèves de la classe {{classe.nom}}</p>
+  <ul>
+    <li *ngFor="let eleve of classe.eleves">{{eleve.prenom}} {{eleve.nom}}, {{eleve.age}} ans</li>
+  </ul>
+  <p>Il y a {{classe.eleves.length}} élèves.</p>
 </div>
-<div>
-<p>Liste des élèves de la classe {{classe.nom}}</p>
-<ul>
-  <li *ngFor="let eleve of classe.eleves">{{eleve.prenom}} {{eleve.nom}}, {{eleve.age}} ans</li>
-</ul>
-<p>Il y a {{classe.eleves.length}} élèves.</p>
-</div>
-

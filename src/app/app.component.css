@@ -14,5 +14,14 @@ h2 {
 div.menu {
   min-width: 40%;
 }
+div.exo {
+  border-radius: 15px;
+  background-color: blanchedalmond;
+  color: brown;
+  padding: 0px 20px;
+  min-width: 500px;
+  /* max-height:550px; */
+  overflow: auto;
+}
 
 

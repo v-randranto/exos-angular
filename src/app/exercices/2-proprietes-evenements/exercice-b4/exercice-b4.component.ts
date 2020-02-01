@@ -15,7 +15,7 @@ export class ExerciceB4Component implements OnInit {
  
   styles:IStyle[] = [
     { width: '50px', height: '50px', 'background-color': 'black' },
-    { width: '50px', height: '50px', 'background-color': 'antiquewhite' },
+    { width: '50px', height: '50px', 'background-color': 'orange' },
     { width: '50px', height: '50px', 'background-color': 'darkred' }
   ]
   
