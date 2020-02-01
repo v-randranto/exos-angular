@@ -14,7 +14,8 @@ interface IUtilisateur {
   styleUrls: ['./exercice-c2.component.css']
 })
 export class ExerciceC2Component implements OnInit {
-  titreH2:string = 'Exercice c2'
+  titreH2:string = 'Exercice c2';
+  user:IUtilisateur;
   constructor() { }
 
   ngOnInit() {

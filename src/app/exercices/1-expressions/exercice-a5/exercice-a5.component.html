@@ -8,9 +8,9 @@
     <option value="4">bleu et blanc</option>
     <option value="5">bleu et rouge</option>
     <option value="6">rouge et blanc</option>
-    <option value="7">bleu, blan et rouge</option>
+    <option value="7">bleu, blanc et rouge</option>
   </select>
 </form>
-<div *ngIf="couleur == 1 || couleur == 4 || couleur == 5 || couleur == 7" class='bleu'></div>
-<div *ngIf="couleur == 2 || couleur == 4 || couleur == 6 || couleur == 7" class='blanc'></div>
-<div *ngIf="couleur == 3 || couleur == 5 || couleur == 6 || couleur == 7" class='rouge'></div>
+<div *ngIf="couleur == '1' || couleur == '4' || couleur == '5' || couleur == '7'" class='bleu'></div>
+<div *ngIf="couleur == '2' || couleur == '4' || couleur == '6' || couleur == '7'" class='blanc'></div>
+<div *ngIf="couleur == '3' || couleur == '5' || couleur == '6' || couleur == '7'" class='rouge'></div>

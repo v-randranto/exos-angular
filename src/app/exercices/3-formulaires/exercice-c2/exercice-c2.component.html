@@ -3,18 +3,18 @@
 <div>
     <form #formRef="ngForm" action="#" method="post">
         <p><label for="nom">Nom : </label>
-            <input #refNom="ngModel" type="text" name="nom" [(ngModel)]="nom"></p>
+            <input #refNom="ngModel" type="text" name="nom" [(ngModel)]="user.nom"></p>
         <p><label for="prenom">Prénom : </label>
-            <input #refPrenom="ngModel" type="text" name="prenom" [(ngModel)]="prenom"></p>
+            <input #refPrenom="ngModel" type="text" name="prenom" [(ngModel)]="user.prenom"></p>
         <p><label for="email">Email : </label>
-            <input #refEmail="ngModel" type="email" name="email" [(ngModel)]="email"></p>
+            <input #refEmail="ngModel" type="email" name="email" [(ngModel)]="user.email"></p>
         <p><label for="age">Age : </label>
-            <input refAge="ngModel" type="number" name="age" [(ngModel)]="age"></p>
+            <input refAge="ngModel" type="number" name="age" [(ngModel)]="user.age"></p>
         <p><input type="submit" value="Valider"></p>
     </form>
 
     <p>Affichage des données saisies :</p>
-    <p>Nom : <i>{{nom}}</i><br>Prénom : <i>{{prenom}}</i> <br>Email : <i>{{email}}</i> <br> Age : <i>{{age}}</i></p>
+    <p>Nom : <i>{{user.nom}}</i><br>Prénom : <i>{{user.prenom}}</i> <br>Email : <i>{{user.email}}</i> <br> Age : <i>{{user.age}}</i></p>
     
     <p>Affichage du contenu du formulaire : <i>{{formRef.value | json}}</i></p>
 
